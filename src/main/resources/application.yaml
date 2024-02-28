@@ -1,0 +1,23 @@
+server:
+  port: 3530
+
+spring:
+
+#  security:
+#    secret: Qi5ncmIndCxiLHI7dCx0cjZ0NGI4NzQxcnJ0YjR0cmViZWE4NDg2NHRiODQ2cjQ2dHI0Yg==
+#    token:
+#      expirationTime: 120
+
+  banner:
+    location: banner.txt
+
+  datasource:
+    url: jdbc:mysql://localhost:2004/ETASK?createDatabaseIfNotExist=true
+    username: root
+    password: password
+
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
